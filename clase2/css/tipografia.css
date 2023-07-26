@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #2e2e2e;
+    color: #cfffe6;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+p{
+    padding: 24px;
+}
