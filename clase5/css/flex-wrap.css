@@ -1,0 +1,21 @@
+
+section{
+    background-color: #777777;
+    width: 800px;
+    height: 280px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap; 
+    /* respeta los anchos de los elementos
+        dentro del contenedor
+        (si no entran en el contenedor genera nueva fila)
+    */
+
+}
+    article{
+        background-color: #83ffaa;
+        width: 180px;
+        height: 150px;
+        border: 1px solid #1e482b;
+    }
