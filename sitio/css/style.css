@@ -43,6 +43,7 @@ header{
 /* main:  contenido de la página */
 main{
     width: 960px;
+    min-height: 500px;
     margin: auto;
 }
 
@@ -134,3 +135,71 @@ main{
         font-size: 56px;
         margin: 22px 52px 16px 52px;
     }
+
+/* página servicios */
+/* video */
+#video{
+    height: 450px;
+}
+    #video iframe{
+        width: 960px;
+        height: 450px;
+        border: none;
+    }
+
+/* rooms  */
+#rooms{
+    background-color: #FAF0E9;
+    padding: 32px;
+    margin: 56px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+    #rooms article{
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+    }
+        #rooms article div{
+            margin: 16px 32px;
+        }
+        #rooms article div h2{
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        #rooms div span{
+            color: #AF5B01;
+        }
+        #rooms article div p{
+            margin-top: 40px;
+        }
+
+
+
+/* footer  */
+footer{
+    width: 960px;
+    height: 160px;
+    background-color: #3C3C3C;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    footer a{
+        margin-left: 40px;
+        color: #fff;
+    }
+        footer a img{
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    footer div{
+        margin-right: 40px;
+    }
+        footer div a{
+            margin: 8px;
+        }
