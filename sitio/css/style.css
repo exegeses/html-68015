@@ -210,6 +210,43 @@ main{
         }
         */
 
+/* formulario de contacto */
+#contacto{
+    height: 450px;
+    background-color: #EC7D54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #contacto form{
+        width: 564px;
+        height: 303px;
+    }
+
+        #contacto form input,
+        #contacto form textarea
+        {
+            background-color: #CB582E;
+            width: 100%;
+            border: none;
+            padding: 8px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+        }
+        #contacto form textarea{
+            height: 142px;
+            resize: none;
+        }
+
+        #contacto form input::placeholder,
+        #contacto form textarea::placeholder
+        {
+            color: #fff;
+        }
+
+
+
+
 /* footer  */
 footer{
     width: 960px;
