@@ -175,7 +175,40 @@ main{
             margin-top: 40px;
         }
 
-
+        
+        #rooms a{
+            display: inline-block;
+            margin-top: 16px;
+            color: #fff;
+            background-color: #c91414;
+            font-size: 23px;
+            border: 1px solid #130202 ;
+            border-radius: 8px;
+            padding: 4px 16px;
+            transition: 200ms;
+        }
+            
+            #rooms a:hover{
+                background-color: #a51010;
+                box-shadow: 40%;
+            }
+        
+        /*
+        #rooms a{
+            display: block;
+            margin: 24px auto;
+            width: 160px;
+            padding: 8px;
+            background-color: #AF5B01;
+            color: #fff;
+            border-radius: 12px;
+            text-align: center;
+            transition: 500ms;
+        }
+        #rooms a:hover{
+            background-color: #d67a16;
+        }
+        */
 
 /* footer  */
 footer{
