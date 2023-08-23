@@ -217,6 +217,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: 20px;
 }
     #contacto form{
         width: 564px;
@@ -244,8 +246,32 @@ main{
             color: #fff;
         }
 
+        #contacto form button{
+            background-color: #fff;
+            color: #0f0c0c;
+            border-radius: 8px;
+            border: 1px solid #0f0c0c;
+            width: 206px;
+            height: 35px;
+            padding: 8px 84px;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        #contacto form button:hover{
+            background-color: #FAE481;
+        }
 
+/* mapa de google */
+#mapa{
+    height: 450px;
+    margin: 56px 0px;
+}
 
+    #mapa iframe{
+        width: 960px;
+        height: 450px;
+        border: none;
+    }
 
 /* footer  */
 footer{

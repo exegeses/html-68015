@@ -26,12 +26,34 @@
     <main>
 
         <section id="contacto">
-            <form action="contacto.php" method="post">
-                <input type="text" name="nombre" placeholder="Nombre:" required>
-                <input type="email" name="email" placeholder="Email:" required>
-                <textarea name="consulta" placeholder="Consulta:" required></textarea>
-                <button>Enviar</button>
-            </form>
+<?php
+    //capturamos datos enviados por el form
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $consulta = $_POST['consulta'];
+    //configuramos datos de email a enviar
+    $destinatario = 'contacto@adidas.com.ar';
+    $asunto = 'Email enviado desde Summer Exploring';
+    $cuerpo = '<div style="background-color: #CB582E;
+                           color: #fff; width: 550px;
+                           font-family: Arial; 
+                           font-size: 20px;
+                           padding: 24px 32px;
+                           border-radius: 12px;">';
+    $cuerpo .= 'Nombre: '.$nombre.'<br>';
+    $cuerpo .= 'Email: '.$email.'<br>';
+    $cuerpo .= 'Consulta: '.$consulta.'</div>';
+    # encabezados adicionales
+    $headers = 'From: contacto@adidas.com.ar'. "\r\n";
+    $headers .= 'Reply-To: '.$email."\r\n";
+    $headers .= "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+    //enviamos el email
+    mail($destinatario, $asunto, $cuerpo, $headers);
+
+    #### generamos emnsaje de agradecimiento
+    echo 'Gracias '.$nombre.' por contactarnos';
+?>            
         </section>
 
         <section id="mapa">
